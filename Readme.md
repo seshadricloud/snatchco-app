@@ -56,59 +56,15 @@ It includes user authentication, product catalog, cart, wishlist, checkout, and 
 | Monitoring / Logs   | Prometheus + Grafana + ELK |
 | UI/UX Design        | Figma / Adobe XD |
 
+<<<<<<< HEAD
 ![architecture Logo](./assets/architecture.png)
- 4. Architecture Diagram
-                   ┌───────────────────────────┐
-                   │        User (App/Web)     │
-                   │  React Native / React.js  │
-                   └─────────────┬─────────────┘
-                                 │
-                                 ▼
-                   ┌───────────────────────────┐
-                   │     API Gateway / Load    │
-                   │      Balancer (AWS ALB)   │
-                   └─────────────┬─────────────┘
-                                 │
-                                 ▼
- ┌───────────────────────────┐   │   ┌───────────────────────────┐
- │        Backend API         │   │   │  Authentication Service   │
- │ Node.js + Express (Docker) │<──┼──>│   JWT / OAuth (Google)    │
- └─────────────┬─────────────┘       └───────────────────────────┘
-               │
-               ▼
- ┌───────────────────────────┐
- │     Database Layer         │
- │ PostgreSQL/MySQL (AWS RDS) │
- └─────────────┬─────────────┘
-               │
-    ┌──────────┼───────────┐
-    ▼                      ▼
-
-               │
-               ▼
-    ┌───────────────────────────┐
-    │  Payment Gateway (Razorpay│
-    │   / Stripe) Integration   │
-    └───────────────────────────┘
-
-               │
-               ▼
-    ┌───────────────────────────┐
-    │  Monitoring & Logging      │
-    │ Prometheus + Grafana + ELK │
-    └───────────────────────────┘
-
-               │
-               ▼
-    ┌───────────────────────────┐
-    │   CI/CD Pipeline           │
-    │ GitHub Actions / Jenkins   │
-    │ (Build → Test → Deploy)    │
-    └───────────────────────────┘
-
-
-
+=======
 ---
+
+>>>>>>> 39b20073d73fdaf820806a0599a01547faa7de8b
+ 4. Architecture Diagram
+ 
+![architecture Logo](./assets/architecture.png)
 
  5. 45-Day Development Timeline
 
