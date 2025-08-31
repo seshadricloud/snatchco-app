@@ -57,59 +57,10 @@ It includes user authentication, product catalog, cart, wishlist, checkout, and 
 | UI/UX Design        | Figma / Adobe XD |
 
 ---
-![architecture Logo](./assets/architecture.png)
+
  4. Architecture Diagram
-                   ┌───────────────────────────┐
-                   │        User (App/Web)     │
-                   │  React Native / React.js  │
-                   └─────────────┬─────────────┘
-                                 │
-                                 ▼
-                   ┌───────────────────────────┐
-                   │     API Gateway / Load    │
-                   │      Balancer (AWS ALB)   │
-                   └─────────────┬─────────────┘
-                                 │
-                                 ▼
- ┌───────────────────────────┐   │   ┌───────────────────────────┐
- │        Backend API         │   │   │  Authentication Service   │
- │ Node.js + Express (Docker) │<──┼──>│   JWT / OAuth (Google)    │
- └─────────────┬─────────────┘       └───────────────────────────┘
-               │
-               ▼
- ┌───────────────────────────┐
- │     Database Layer         │
- │ PostgreSQL/MySQL (AWS RDS) │
- └─────────────┬─────────────┘
-               │
-    ┌──────────┼───────────┐
-    ▼                      ▼
-
-               │
-               ▼
-    ┌───────────────────────────┐
-    │  Payment Gateway (Razorpay│
-    │   / Stripe) Integration   │
-    └───────────────────────────┘
-
-               │
-               ▼
-    ┌───────────────────────────┐
-    │  Monitoring & Logging      │
-    │ Prometheus + Grafana + ELK │
-    └───────────────────────────┘
-
-               │
-               ▼
-    ┌───────────────────────────┐
-    │   CI/CD Pipeline           │
-    │ GitHub Actions / Jenkins   │
-    │ (Build → Test → Deploy)    │
-    └───────────────────────────┘
-
-
-
----
+ 
+![architecture Logo](./assets/architecture.png)
 
  5. 45-Day Development Timeline
 
