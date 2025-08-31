@@ -51,7 +51,8 @@ This document provides a **full-fledged tree-style architecture and workflow** f
 → **SnatchCo Architecture Tree**
 
 ```
-![stepwise interaction from user to deployment] (.assets/flow.png)
+![flow data](./assets/flow.png)
+
 SnatchCo (MVP Shopping App)
 │
 ├── 1. Frontend Layer (React Native / React.js)
