@@ -141,6 +141,36 @@ SnatchCo (MVP Shopping App)
 
 ---
 
+snatchco/
+├── backend/                 # Node.js + Express backend
+│   ├── Dockerfile           # Docker instructions for backend
+│   ├── package.json         # Backend dependencies & scripts
+│   ├── package-lock.json    # Auto-generated (npm install)
+│   ├── server.js            # Entry point for backend
+│   ├── src/
+│   │   ├── routes/
+│   │   │   └── userRoutes.js     # Routes for user APIs
+│   │   ├── controllers/
+│   │   │   └── userController.js # Logic for handling user requests
+│   │   ├── models/
+│   │   │   └── userModel.js      # User DB schema (Postgres)
+│   │   └── config/
+│   │       └── db.js             # DB connection
+│   └── .env                 # Environment variables
+│
+├── frontend/                # React frontend
+│   ├── Dockerfile
+│   ├── package.json
+│   ├── public/
+│   │   └── index.html
+│   └── src/
+│       ├── App.js
+│       └── index.js
+│
+├── docker-compose.yml       # Run everything (frontend + backend + DB + Redis)
+└── README.md
+
+
 → **Highlights & Notes**
 
 - **Frontend:** Mobile-first design with reusable UI components.  

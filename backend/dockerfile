@@ -1,0 +1,18 @@
+# backend/Dockerfile/Node.js + Express
+FROM node:18-alpine
+
+#Set work directory
+WORKDIR /app
+
+#Copy package.json and install dependencies
+COPY package*.json ./
+RUN npm install
+
+#copy all files
+COPY . .
+
+#Expose API port
+EXPOSE 5000
+
+#Run app
+CMD ["npm", "start"]

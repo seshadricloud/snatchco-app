@@ -1,0 +1,40 @@
+services:
+  db:
+    image: postgres:15
+    container_name: snatchco-db
+    restart: always
+    environment:
+      POSTGRES_USER: snatchco
+      POSTGRES_PASSWORD: snatchco123
+      POSTGRES_DB: snatchco_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  backend:
+    build: ./backend
+    container_name: snatchco-backend
+    restart: always
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_USER: snatchco
+      DB_PASSWORD: snatchco123
+      DB_NAME: snatchco_db
+    ports:
+      - "5000:5000"
+
+  frontend:
+    build: ./frontend
+    container_name: snatchco-frontend
+    restart: always
+    depends_on:
+      - backend
+    ports:
+      - "3000:3000"
+
+# ✅ Define your named volume here
+volumes:
+  db-data:
