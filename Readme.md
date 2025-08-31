@@ -1,6 +1,6 @@
  SnatchCo – MVP Shopping App
 
-![SnatchCo Logo](./assets/app.png)
+![SnatchCo Logo](./assets/logo.png)
 
 SnatchCo is a Minimum Viable Product (MVP) shopping application for fashion e-commerce, inspired by Myntra.  
 It includes user authentication, product catalog, cart, wishlist, checkout, and payment features. DevOps practices like CI/CD, Docker, and cloud deployment are integrated.
@@ -56,7 +56,6 @@ It includes user authentication, product catalog, cart, wishlist, checkout, and 
 | Monitoring / Logs   | Prometheus + Grafana + ELK |
 | UI/UX Design        | Figma / Adobe XD |
 
----
 ![architecture Logo](./assets/architecture.png)
  4. Architecture Diagram
                    ┌───────────────────────────┐
