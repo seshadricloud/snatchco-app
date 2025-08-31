@@ -56,13 +56,6 @@ It includes user authentication, product catalog, cart, wishlist, checkout, and 
 | Monitoring / Logs   | Prometheus + Grafana + ELK |
 | UI/UX Design        | Figma / Adobe XD |
 
-<<<<<<< HEAD
-![architecture Logo](./assets/architecture.png)
-=======
----
-
->>>>>>> 39b20073d73fdaf820806a0599a01547faa7de8b
- 4. Architecture Diagram
  
 ![architecture Logo](./assets/architecture.png)
 
